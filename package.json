@@ -26,7 +26,9 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "three": "^0.119.1"
+    "three": "^0.119.1",
+    "three-obj-mtl-loader": "^1.0.3",
+    "three-orbitcontrols": "^2.110.3"
   },
   "devDependencies": {
     "@types/react": "^16.9.25",

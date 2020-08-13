@@ -6,10 +6,12 @@ const ThreeScene: FC = () => {
 
     useEffect(() => {
         if (ref.current) {
-            const { start, stop, animate, addCube } = ThreeLib(ref.current);
-            console.log('ref', ref);
+            const { start, stop, animate, addCube, addGltf, addObj } = ThreeLib(ref.current);
             start();
             addCube();
+            addGltf('./asset/wall/Wall.gltf');
+            addGltf('./asset/floor/Floor.gltf');
+            addObj('./asset/test/', 'AztecPyramid.obj', 'AztecPyramid.mtl');
             animate();
             return () => {
                 stop();
