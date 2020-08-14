@@ -14,25 +14,15 @@ class ThreeLib {
 
     frameId: number | null;
 
-    mount: HTMLDivElement;
-
     renderer: any;
-
-    gltfLoader: any;
-
-    objLoader: any;
-
-    mtlLoader: any;
 
     controls: any;
 
     cube: any;
 
-    constructor(mount) {
-        this.mount = mount;
-        this.gltfLoader = new GLTFLoader();
-        const width = this.mount?.clientWidth;
-        const height = this.mount?.clientHeight;
+    constructor(divElement) {
+        const width = divElement.clientWidth;
+        const height = divElement.clientHeight;
         const cameraAspectRatio = width / height;
 
         this.scene = new THREE.Scene();
@@ -50,8 +40,8 @@ class ThreeLib {
         this.renderer = new THREE.WebGLRenderer({ antialias: true });
         this.renderer.setClearColor('#fff');
         this.renderer.setSize(width, height);
-        if (this.mount) {
-            this.mount.appendChild(this.renderer.domElement);
+        if (divElement) {
+            divElement.appendChild(this.renderer.domElement);
         }
         // ADD MOUSE CTRL
         this.controls = new OrbitControls(this.camera, this.renderer.domElement);
@@ -92,7 +82,8 @@ class ThreeLib {
     };
 
     addGltf = (url: string) => {
-        this.gltfLoader.load(url, gltf => {
+        const gltfLoader = new GLTFLoader();
+        gltfLoader.load(url, gltf => {
             this.scene.add(gltf.scene);
         });
     };
@@ -120,9 +111,9 @@ class ThreeLib {
     };
 }
 
-export default (mount: HTMLDivElement) => {
+export default (divElement: HTMLDivElement) => {
     if (!ThreeLib.memorizedLibInstance) {
-        ThreeLib.memorizedLibInstance = new ThreeLib(mount);
+        ThreeLib.memorizedLibInstance = new ThreeLib(divElement);
         return ThreeLib.memorizedLibInstance;
     }
     return ThreeLib.memorizedLibInstance;
