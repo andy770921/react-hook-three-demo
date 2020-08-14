@@ -6,12 +6,16 @@ const ThreeScene: FC = () => {
 
     useEffect(() => {
         if (ref.current) {
-            const { start, stop, animate, addCube, addGltf, addObj } = ThreeLib(ref.current);
+            const { start, stop, animate, addGltf } = ThreeLib(ref.current);
             start();
-            addCube();
-            addGltf('./asset/wall/Wall.gltf');
+            addGltf('./asset/wall/Wall.gltf'); // TODOS: cannot see obj. check position, size, color
             addGltf('./asset/floor/Floor.gltf');
-            addObj('./asset/test/', 'AztecPyramid.obj', 'AztecPyramid.mtl');
+            addGltf('./asset/warehouse_glass/Basement.gltf');
+            addGltf('./asset/truck/Truck.gltf');
+            addGltf('./asset/robot/robot_hi.gltf');
+            addGltf('./asset/product_title/FeatureProduct_Title.gltf');
+            addGltf('./asset/product_glass/SPACESHIP_ALL3_UVdone.gltf'); // TODOS: cannot see obj. check position, size, color
+            addGltf('./asset/highlight_board_DRAM/Showcase.gltf'); // float above ground
             animate();
             return () => {
                 stop();
@@ -19,7 +23,7 @@ const ThreeScene: FC = () => {
         }
     }, []);
 
-    return <div style={{ width: '400px', height: '400px' }} ref={ref} />;
+    return <div style={{ width: '600px', height: '600px' }} ref={ref} />;
 };
 
 const App: FC = () => <ThreeScene />;
