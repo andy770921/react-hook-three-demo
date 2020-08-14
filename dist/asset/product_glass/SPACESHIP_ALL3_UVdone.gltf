@@ -1,0 +1,416 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 84,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        1351.61840820313,
+        -998.666748046875,
+        286.1328125
+      ],
+      "min": [
+        1049.88537597656,
+        -1519.28161621094,
+        36.1328201293945
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 64,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 64,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5125,
+      "count": 84,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 68,
+      "max": [
+        1351.60021972656,
+        106.815765380859,
+        286.133178710938
+      ],
+      "min": [
+        1049.86853027344,
+        -413.799835205078,
+        36.1331634521484
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 68,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 68,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5125,
+      "count": 84,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 56,
+      "max": [
+        2445.55712890625,
+        399.798126220703,
+        285.515014648438
+      ],
+      "min": [
+        1845.55700683594,
+        397.797576904297,
+        35.5149993896484
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 56,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5126,
+      "count": 56,
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "generator": "Substance Painter 6.2.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 336,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 768,
+      "byteOffset": 336,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 768,
+      "byteOffset": 1104,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 512,
+      "byteOffset": 1872,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 336,
+      "byteOffset": 2384,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 816,
+      "byteOffset": 2720,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 816,
+      "byteOffset": 3536,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 544,
+      "byteOffset": 4352,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 336,
+      "byteOffset": 4896,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 672,
+      "byteOffset": 5232,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 672,
+      "byteOffset": 5904,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 448,
+      "byteOffset": 6576,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 7024,
+      "uri": "SPACESHIP_ALL3_UVdone.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "Window_baseColor.png"
+    },
+    {
+      "uri": "Window_occlusionRoughnessMetallic.png"
+    },
+    {
+      "uri": "Window_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "name": "Window",
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object047",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 2,
+            "POSITION": 1,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object048",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TEXCOORD_0": 7
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "SHIP_WINDOW",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9,
+            "TEXCOORD_0": 11
+          },
+          "indices": 8,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        9
+      ],
+      "name": "RootNode"
+    },
+    {
+      "name": "Object043",
+      "rotation": [
+        -0.70710676908493,
+        6.18172393274108e-08,
+        6.18172393274108e-08,
+        0.70710676908493
+      ],
+      "translation": [
+        1849.3857421875,
+        361.367919921875,
+        -2319.26342773438
+      ]
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Object047",
+      "rotation": [
+        0.353553086519241,
+        0.612372636795044,
+        0.612372636795044,
+        -0.353553086519241
+      ],
+      "translation": [
+        2740.67944335938,
+        200.235000610352,
+        -2728.65600585938
+      ]
+    },
+    {
+      "mesh": 0,
+      "name": "Object047"
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "Object048",
+      "rotation": [
+        0.353553086519241,
+        0.612372636795044,
+        0.612372636795044,
+        -0.353553086519241
+      ],
+      "translation": [
+        2740.67944335938,
+        200.235000610352,
+        -2728.65600585938
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "Object048"
+    },
+    {
+      "name": "Object049",
+      "rotation": [
+        -0.612372398376465,
+        -0.353553473949432,
+        -0.353553473949432,
+        0.612372398376465
+      ],
+      "translation": [
+        2407.94213867188,
+        361.36767578125,
+        -1073.74768066406
+      ]
+    },
+    {
+      "children": [
+        8
+      ],
+      "name": "SHIP_WINDOW",
+      "rotation": [
+        0.353553086519241,
+        0.612372636795044,
+        0.612372636795044,
+        -0.353553086519241
+      ],
+      "translation": [
+        2740.67944335938,
+        200.235000610352,
+        -2728.65600585938
+      ]
+    },
+    {
+      "mesh": 2,
+      "name": "SHIP_WINDOW"
+    },
+    {
+      "name": "Object050",
+      "rotation": [
+        0.353553384542465,
+        0.612372398376465,
+        0.61237245798111,
+        -0.353553384542465
+      ],
+      "translation": [
+        1614.44104003906,
+        360.749938964844,
+        21.6369533538818
+      ]
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9985,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}
